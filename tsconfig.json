@@ -1,0 +1,9 @@
+{
+    "compilerOptions": {
+        "declaration": false,
+        "noEmitOnError": true,
+        "experimentalDecorators": true,
+        "emitDecoratorMetadata": true,
+        "target": "es5"
+    }
+}
