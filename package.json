@@ -1,0 +1,27 @@
+{
+  "name": "design-lab",
+  "version": "1.0.0",
+  "description": "schoolproj",
+  "main": "index.js",
+  "dependencies": {
+    "angular": "^1.6.6",
+    "bootstrap": "^3.3.7",
+    "eslint": "^4.11.0"
+  },
+  "devDependencies": {
+    "eslint": "^4.11.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/crayfish921/design-lab.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/crayfish921/design-lab/issues"
+  },
+  "homepage": "https://github.com/crayfish921/design-lab#readme"
+}
