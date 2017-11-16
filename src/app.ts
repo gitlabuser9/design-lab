@@ -1,3 +1,4 @@
 import * as angular from 'angular';
-const appModule = angular.module('regSystemApp', ['ngMaterial']);
+import * as ngMaterial from 'angular-material';
+const appModule = angular.module('regSystemApp', [ngMaterial]);
 export default appModule;
