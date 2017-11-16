@@ -1,6 +1,6 @@
 import { RegSystemController } from './reg-system.controller';
 const regSystemAppTemplate = require('./reg-system.template.jade');
-import './todo-app-style.less';
+import './reg-system.style.less';
 
 export class RegSystemComponent implements ng.IComponentOptions {
     controller = RegSystemController;
