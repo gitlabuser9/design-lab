@@ -20,17 +20,9 @@
 </nav>
 
 <div class="lectures-table">
-    <div class="testview">
-        <div ng-repeat="lecture in $ctrl.lectureList">{{lecture}}</div>
+    <div class="lectures-table-item" ng-repeat="lecture in $ctrl.lectureList">
+        <div class=lectures-table-item-course>{{lecture.course}}</div>
+        <div class=lectures-table-item-studentCount>{{lecture.studentCount}}</div>
+        <div class=lectures-table-item-registered>{{lecture.registered}}</div>
     </div>
-    <div>
-        <div>
-
-        </div>
-    </div>
-    <div>
-        <div>
-
-        </div>
-    </div>       
 </div>
