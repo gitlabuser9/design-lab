@@ -5,8 +5,8 @@ export class RegSystemController implements ng.IComponentController {
     
     constructor() {
         let lectureList = [{ course: 'algoritmi', studentCount: 200, registered: 100},
-                           { course: 'chuwj', studentCount: 30, registered: 15},
-                           { course: 'chuwj', studentCount: 20, registered: 15}];
+                           { course: 'polezniy predmet', studentCount: 30, registered: 15},
+                           { course: 'predmet', studentCount: 20, registered: 15}];
         this.lectureList = lectureList;
     }
 
