@@ -1,18 +1,42 @@
 .lectures-table {
     display: table;
+
     &-item{
         display: table-row; 
+
         &-course{
             display: table-cell;
         }
+
         &-studentCount{
             display: table-cell; 
         }
+
         &-registered{
             display: table-cell; 
         }
+
         &-button{
             display: table-cell;
+        }
+    }
+}
+
+.main-menu {
+    &-container {
+        &-nav{
+            &-link {
+                &:hover {
+                    cursor: pointer;   
+                }      
+            }
+        }
+        &-navright {
+            &-login {
+                &:hover {  
+                    cursor: pointer;
+                }
+            }
         }
     }
 }

@@ -4,28 +4,28 @@
             <a class="navbar-brand">Studentu registracijas sistema</a>
         </div>
         <ul class="main-menu-container-nav nav navbar-nav">
-            <li class="active">
+            <li class="main-menu-container-nav-link">
                 <a>Galvena</a>
             </li>
-            <li>
+            <li class="main-menu-container-nav-link">
                 <a>Ne Galvena</a>
             </li>
         </ul>
         <ul class="main-menu-container-navright nav navbar-nav navbar-right">
             <li>
-                <a><span class="main-menu-container-navright-login-button glyphicon glyphicon-log-in"></span> Autorizacija</a>
+                <a class="main-menu-container-navright-login"><span class="glyphicon glyphicon-log-in"></span> Autorizacija</a>
             </li>
         </ul>
     </div>
 </nav>
 
 <div class="lectures-table">
-    <div class="lectures-table-item" ng-repeat="lecture in $ctrl.lectureList">
+    <div class="lectures-table-item" ng-repeat="lecture in $ctrl.lectureList track by $index">
         <div class=lectures-table-item-course>{{lecture.course}}</div>
         <div class=lectures-table-item-studentCount>{{lecture.studentCount}}</div>
         <div class=lectures-table-item-registered>{{lecture.registered}}</div>
         <div class=lectures-table-item-button>
-            <button type="button" class="btn btn-success" ng-click="$ctrl.addRegistration()">Registreties</button>
+            <button type="button" class="btn btn-success" ng-click="$ctrl.addRegistration(lecture)">Registreties</button>
         </div>
     </div>
 </div>

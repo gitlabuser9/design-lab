@@ -10,8 +10,9 @@ export class RegSystemController implements ng.IComponentController {
         this.lectureList = lectureList;
     }
 
-    addRegistration() {
-        
+    addRegistration(lecture: Lecture) {
+        if (lecture.registered < lecture.studentCount)
+            lecture.registered++;
     }
 
 }
