@@ -13,7 +13,7 @@
         </ul>
         <ul class="main-menu-container-navright nav navbar-nav navbar-right">
             <li>
-                <a><span class="glyphicon glyphicon-log-in"></span> Autorizacija</a>
+                <a><span class="main-menu-container-navright-login-button glyphicon glyphicon-log-in"></span> Autorizacija</a>
             </li>
         </ul>
     </div>
@@ -25,7 +25,7 @@
         <div class=lectures-table-item-studentCount>{{lecture.studentCount}}</div>
         <div class=lectures-table-item-registered>{{lecture.registered}}</div>
         <div class=lectures-table-item-button>
-            <button type="button" class="btn btn-success">Registreties</button>
+            <button type="button" class="btn btn-success" ng-click="$ctrl.addRegistration()">Registreties</button>
         </div>
     </div>
 </div>
