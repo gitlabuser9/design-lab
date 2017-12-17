@@ -1,23 +1,41 @@
 .lectures-table {
     display: table;
 
+    &-headings {
+        display: table-cell;
+    }
+
     &-item{
         display: table-row; 
 
         &-course{
+            margin-top: 5px;
             display: table-cell;
+            width: 30%;
         }
 
         &-studentCount{
+            margin-top: 5px;
+            padding-left: 37px;
             display: table-cell; 
+            width: 20%;
         }
 
         &-registered{
-            display: table-cell; 
+            padding-left: 48px;
+            margin-top: 5px;
+            display: table-cell;
+            width: 20%; 
         }
 
         &-button{
+            
             display: table-cell;
+
+            .regbtn {
+                margin-top: 5px;
+                margin-left: 20px;
+            }
         }
     }
 }

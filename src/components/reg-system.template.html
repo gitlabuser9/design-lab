@@ -8,7 +8,7 @@
                 <a>Galvena</a>
             </li>
             <li class="main-menu-container-nav-link">
-                <a>Ne Galvena</a>
+                <a>Manage courses</a>
             </li>
         </ul>
         <ul class="main-menu-container-navright nav navbar-nav navbar-right">
@@ -20,12 +20,13 @@
 </nav>
 
 <div class="lectures-table">
+    <div class="lectures-table-headings" ng-repeat="heading in $ctrl.headings track by $index">{{heading}}</div>
     <div class="lectures-table-item" ng-repeat="lecture in $ctrl.lectureList track by $index">
         <div class=lectures-table-item-course>{{lecture.course}}</div>
         <div class=lectures-table-item-studentCount>{{lecture.studentCount}}</div>
         <div class=lectures-table-item-registered>{{lecture.registered}}</div>
         <div class=lectures-table-item-button>
-            <button type="button" class="btn btn-success" ng-click="$ctrl.addRegistration(lecture)">Registreties</button>
+            <button type="button" class="regbtn btn btn-success" ng-click="$ctrl.addRegistration(lecture)">Registreties</button>
         </div>
     </div>
 </div>
