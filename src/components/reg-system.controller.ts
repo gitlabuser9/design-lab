@@ -19,4 +19,9 @@ export class RegSystemController implements ng.IComponentController {
         }
     }
 
+    cancelAttendance(lecture: Lecture){
+        if (lecture.studentCount > lecture.registered) {
+            lecture.studentCount--   
+        }
+    }
 }

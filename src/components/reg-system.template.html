@@ -5,7 +5,7 @@
         </div>
         <ul class="main-menu-container-nav nav navbar-nav">
             <li class="main-menu-container-nav-link">
-                <a>Galvena</a>
+                <a href="#/main">Galvena</a>
             </li>
             <li class="main-menu-container-nav-link">
                 <a>Manage courses</a>
@@ -13,7 +13,7 @@
         </ul>
         <ul class="main-menu-container-navright nav navbar-nav navbar-right">
             <li>
-                <a class="main-menu-container-navright-login"><span class="glyphicon glyphicon-log-in"></span> Autorizacija</a>
+                <a href="#/auth" class="main-menu-container-navright-login"><span class="glyphicon glyphicon-log-in"></span> Autorizacija</a>
             </li>
         </ul>
     </div>
@@ -27,6 +27,9 @@
         <div class=lectures-table-item-registered>{{lecture.registered}}</div>
         <div class=lectures-table-item-button>
             <button type="button" class="regbtn btn btn-success" ng-click="$ctrl.addRegistration(lecture)">Registreties</button>
+        </div>
+        <div class="lectures-table-item-button">
+            <button type="button" class="cancelbtn btn btn-warning" ng-click="$ctrl.cancelAttendance(lecture)">Atteikties</button>
         </div>
     </div>
 </div>
